@@ -50,7 +50,11 @@ const tasks = monday.concat(tuesday);
 // Add your code here
 //console.log(tasks);
 
+<<<<<<< HEAD
 // convert Maarje working mins into hours then into salary for Mon-Tuesday
+=======
+// convert Maarje's working mins into hours then into salary for Mon-Tuesday
+>>>>>>> f6d1acc7b0ab9c3a3f3c27687df766257317bf60
 const salary = tasks.map(lengths => { return lengths.duration })
   .map(hours => hours / 60)
   .filter(long => long >= 2)
@@ -58,4 +62,8 @@ const salary = tasks.map(lengths => { return lengths.duration })
   .map(euro => { return euro.toFixed(2) })
   .reduce((accumulator, wage) => { return accumulator + wage; 0 });
 
+<<<<<<< HEAD
 console.log('Maartje\'s salary for Monday and Tuesday is ' + '€' + salary);
+=======
+console.log('Maartje\'s salary for Monday and Tuesday is ' + '€' + salary);
+>>>>>>> f6d1acc7b0ab9c3a3f3c27687df766257317bf60
