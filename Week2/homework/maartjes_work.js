@@ -1,3 +1,6 @@
+//2.1
+
+//2.2
 'use strict';
 
 const monday = [
@@ -45,3 +48,14 @@ const tuesday = [
 const tasks = monday.concat(tuesday);
 
 // Add your code here
+//console.log(tasks);
+
+// convert Maarje working mins into hours then into salary for Mon-Tuesday
+const salary = tasks.map(lengths => { return lengths.duration })
+  .map(hours => hours / 60)
+  .filter(long => long >= 2)
+  .map(rate => rate * 25)
+  .map(euro => { return euro.toFixed(2) })
+  .reduce((accumulator, wage) => { return accumulator + wage; 0 });
+
+console.log('Maartje\'s salary for Monday and Tuesday is ' + '€' + salary);

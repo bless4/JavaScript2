@@ -21,5 +21,5 @@ f2(y);
 
 console.log(y);
 
-// Add your explanation as a comment here
+// the f1 call that variable x which 9 & f2 retrieve f1 and add 1 to it to make it 10.
 

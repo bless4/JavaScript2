@@ -1,8 +1,10 @@
 'use strict';
 
 function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-  const values = [];
-  // Add your code here
+  let values = [];
+  for (var i = startIndex; i <= stopIndex; i++){
+    values.push(i);
+  }
 }
 
 threeFive(10, 15, sayThree, sayFive);
